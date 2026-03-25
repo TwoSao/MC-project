@@ -1,78 +1,43 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    background: #f4f6f8;
     color: #333;
 }
 
-/* Header */
 header {
-    background: #333;
+    background: #0078d7;
     color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-}
-
-header ul li {
-    margin-left: 20px;
-}
-
-header ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Hero section */
-.hero {
+    padding: 20px;
     text-align: center;
-    padding: 60px 20px;
-    background: #007BFF;
-    color: white;
 }
 
-.hero button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
+main {
+    padding: 20px;
+}
+
+section {
     background: white;
-    color: #007BFF;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Content */
-.content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-}
-
-.card {
-    background: white;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
 }
 
-/* Footer */
+h2 {
+    color: #0078d7;
+}
+
+.image-placeholder {
+    margin-top: 15px;
+    padding: 20px;
+    border: 2px dashed #aaa;
+    text-align: center;
+    color: #777;
+}
+
 footer {
     text-align: center;
     padding: 15px;
-    background: #333;
+    background: #0078d7;
     color: white;
 }
