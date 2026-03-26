@@ -1,43 +1,215 @@
-body {
-    font-family: Arial, sans-serif;
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
-    background: #f4f6f8;
-    color: #333;
+    padding: 0;
 }
 
+:root {
+    --blue: #0078d7;
+    --blue-dark: #005a9e;
+    --blue-light: #e8f3fc;
+    --text: #1a1a2e;
+    --text-muted: #6b7280;
+    --bg: #f0f4f8;
+    --white: #ffffff;
+    --border: #e2e8f0;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+    --radius: 12px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* ── NAV ── */
+nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+
+.nav-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 20px;
+    height: 56px;
+}
+
+.nav-brand {
+    font-weight: 700;
+    color: var(--blue);
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    background: var(--blue-light);
+    color: var(--blue);
+}
+
+nav a.active {
+    background: var(--blue);
+    color: var(--white);
+}
+
+/* ── HEADER ── */
 header {
-    background: #0078d7;
-    color: white;
-    padding: 20px;
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+    color: var(--white);
+    padding: 52px 20px 44px;
     text-align: center;
 }
 
+header h1 {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header p.subtitle {
+    margin-top: 10px;
+    font-size: 15px;
+    opacity: 0.85;
+}
+
+/* ── MAIN ── */
 main {
-    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 36px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+/* ── GOAL CARD ── */
+.goal-card {
+    background: var(--blue-light);
+    border-left: 4px solid var(--blue);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+}
+
+.goal-card p {
+    color: var(--blue-dark);
+    font-size: 15px;
+}
+
+/* ── STEP CARD ── */
 section {
-    background: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
 }
 
-h2 {
-    color: #0078d7;
+.step-label {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #374151;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+section p + p {
+    margin-top: 8px;
+}
+
+strong {
+    color: var(--blue-dark);
+    font-weight: 600;
+}
+
+/* ── IMAGES ── */
+section img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-top: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
 .image-placeholder {
-    margin-top: 15px;
-    padding: 20px;
-    border: 2px dashed #aaa;
+    margin-top: 18px;
+    padding: 32px 20px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
     text-align: center;
-    color: #777;
+    color: #94a3b8;
+    font-size: 14px;
+    background: #f8fafc;
 }
 
+/* ── CODE ── */
+code {
+    background: #f1f5f9;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-family: 'Cascadia Code', 'Courier New', monospace;
+    font-size: 14px;
+    color: #be185d;
+    border: 1px solid #e2e8f0;
+}
+
+/* ── FOOTER ── */
 footer {
     text-align: center;
-    padding: 15px;
-    background: #0078d7;
-    color: white;
+    padding: 20px;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+    .nav-brand { display: none; }
+    nav a { padding: 6px 8px; font-size: 13px; }
+    section { padding: 20px 18px; }
 }
