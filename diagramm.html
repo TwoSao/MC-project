@@ -3,63 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagramm — Microsoft Project</title>
+    <title>Diagrammid — ProjectLibre</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
     <div class="nav-inner">
-        <a href="index.html" class="nav-brand">📁 MS Project</a>
+        <a href="index.html" class="nav-brand">📁 ProjectLibre</a>
         <a href="index.html">📅 Kalender</a>
-        <a href="valem.html">🧮 Valem</a>
         <a href="diagramm.html" class="active">📊 Diagramm</a>
     </div>
 </nav>
 
 <header>
-    <h1>📊 Diagrammide loomine Microsoft Projectis</h1>
-    <p class="subtitle">Gantt, Network Diagram ja Resource Graph — visuaalne ülevaade projektist</p>
+    <h1>📊 Diagrammide loomine ProjectLibre's</h1>
+    <p class="subtitle">Gantt-diagramm ja ressursidiagrammid — projekti visuaalne juhtimine</p>
 </header>
 
 <main>
 
     <div class="goal-card">
-        <p>🎯 <strong>Eesmärk:</strong> Luua ja kasutada diagramme (Gantt, Network Diagram, Resource Graph) Microsoft Projectis.</p>
+        <p>🎯 <strong>Eesmärk:</strong> Selles juhendis näidatakse, kuidas kasutada ProjectLibre's Gantt-diagrammi ülesannete planeerimiseks ning ressursidiagramme meeskonna koormuse jälgimiseks.</p>
     </div>
+
+    <!-- GANTT -->
+    <section>
+        <span class="step-label">Diagramm 1</span>
+        <h2>Gantt-diagramm</h2>
+        <p>Gantt-diagramm on ProjectLibre's peamine vaade, mis kuvatakse automaatselt programmi avamisel. See näitab ülesandeid ajajoone peal — iga ülesanne on kujutatud horisontaalse ribana, mille pikkus vastab kestusele.</p>
+        <p>Gantt-diagramm sobib ideaalselt projekti ajakava planeerimiseks, ülesannete järjestuse määramiseks ja tähtaegade jälgimiseks.</p>
+        <img src="projectLibreImg/gantt1.png" alt="Gantt-diagrammi üldvaade ProjectLibre's">
+    </section>
 
     <section>
         <span class="step-label">Samm 1</span>
-        <h2>Gantt-diagrammi avamine</h2>
-        <p>Vaikimisi avaneb MS Project <strong>Gantt Chart</strong> vaates. Selle leiate vahekaardilt <strong>View → Gantt Chart</strong>.</p>
-        <img src="images/dig1.png" alt="">
+        <h2>Ülesannete lisamine Gantt-vaatesse</h2>
+        <p>Avage ProjectLibre — vaikimisi avaneb <strong>Gantt Chart</strong> vaade. Klõpsake tühja reale vasakus tabelis ja sisestage ülesande nimi väljale <strong>Name</strong>. Määrake <strong>Duration</strong> (kestus päevades) ja <strong>Start</strong> (alguskuupäev).</p>
+        <img src="projectLibreImg/gantt2.png" alt="Ülesannete sisestamine tabelisse">
     </section>
 
     <section>
         <span class="step-label">Samm 2</span>
-        <h2>Võrgudiagramm (Network Diagram)</h2>
-        <p>Minge <strong>View → Network Diagram</strong>, et näha ülesannete sõltuvusi graafiliselt.</p>
-        <img src="images/dig2.png" alt="">
+        <h2>Ülesannete sõltuvuste loomine</h2>
+        <p>Sõltuvuste lisamiseks klõpsake ülesandel ja lohistage nool järgmisele ülesandele otse Gantt-ribal. Teise võimalusena sisestage eelneva ülesande number väljale <strong>Predecessors</strong> tabelis. Sõltuvus kuvatakse noolena diagrammil.</p>
+        <img src="projectLibreImg/gantt3.png" alt="Sõltuvuste loomine Gantt-diagrammil">
     </section>
 
     <section>
         <span class="step-label">Samm 3</span>
-        <h2>Ressursigraafik (Resource Graph)</h2>
-        <p>Valige <strong>View → Resource Graph</strong>, et näha ressursside koormust ajas.</p>
-        <img src="images/dig3.png" alt="">
+        <h2>Gantt-diagrammi kohandamine</h2>
+        <p>Diagrammi välimuse muutmiseks minge <strong>View → Gantt Chart</strong> ja paremklõpsake Gantt-ribal. Valige <strong>Bar Styles</strong>, et muuta ribade värve ja kuju. Ajajoone suurendamiseks/vähendamiseks kasutage <strong>View → Zoom In / Zoom Out</strong>.</p>
+        <img src="projectLibreImg/gantt4.png" alt="Bar Styles seaded">
+    </section>
+
+    <!-- RESOURCE -->
+    <section>
+        <span class="step-label">Diagramm 2</span>
+        <h2>Ressursidiagramm (Resource Usage)</h2>
+        <p>Ressursidiagramm näitab, kui palju tööd on igale ressursile (töötajale) ajas jaotatud. See aitab tuvastada <strong>ülekoormust</strong> (punasega märgitud) ja tasakaalustada meeskonna töökoormust.</p>
+        <p>Vaade sobib ressursside planeerimiseks ja konfliktide lahendamiseks projekti jooksul.</p>
+        <img src="projectLibreImg/res1.png" alt="Resource Usage vaade">
     </section>
 
     <section>
         <span class="step-label">Samm 4</span>
-        <h2>Diagrammi kohandamine</h2>
-        <p>Paremklõpsake diagrammil ja valige <strong>Bar Styles</strong> või <strong>Layout</strong>, et muuta kuvamist.</p>
-        <img src="images/dig4.png" alt="">
+        <h2>Ressursidiagrammi avamine</h2>
+        <p>Minge menüüsse <strong>View → Resource Usage</strong>. Avaneb tabel, kus on näha iga ressursi töömaht päevade kaupa. Ülekoormatud ressursid on märgitud <strong>punasega</strong>.</p>
+        <img src="projectLibreImg/res2.png" alt="View → Resource Usage menüü">
+    </section>
+
+    <section>
+        <span class="step-label">Samm 5</span>
+        <h2>Ressursside määramine ülesannetele</h2>
+        <p>Gantt-vaates topeltklõpsake ülesandel, et avada <strong>Task Information</strong> aken. Minge vahekaardile <strong>Resources</strong> ja lisage ressurss väljale <strong>Resource Name</strong>. Määrake ka <strong>Units</strong> (nt 100% = täistööaeg).</p>
+        <img src="projectLibreImg/res3.png" alt="Task Information → Resources">
+    </section>
+
+    <section>
+        <span class="step-label">Samm 6</span>
+        <h2>Ülekoormuse lahendamine</h2>
+        <p>Kui ressurss on ülekoormatud, saate kasutada <strong>Resource Leveling</strong> funktsiooni: <strong>Tools → Level Resources</strong>. ProjectLibre nihutab ülesandeid automaatselt nii, et ükski ressurss ei ole ülekoormatud.</p>
+        <img src="projectLibreImg/res4.png" alt="Tools → Level Resources">
     </section>
 
     <section>
         <span class="step-label">Tulemus</span>
-        <h2>Valmis diagramm</h2>
-        <p>Diagrammid aitavad visualiseerida projekti ajakava, sõltuvusi ja ressursside kasutust selgelt ja ülevaatlikult.</p>
+        <h2>Diagrammid on valmis</h2>
+        <p>Gantt-diagramm annab selge ülevaate projekti ajakavast ja ülesannete järjestusest. Ressursidiagramm tagab, et meeskonna töökoormus on tasakaalus ja projekt edeneb plaanipäraselt.</p>
+        <img src="projectLibreImg/res5.png" alt="Lõplik Gantt-diagramm koos ressurssidega">
     </section>
 
 </main>
