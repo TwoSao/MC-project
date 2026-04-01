@@ -17,81 +17,42 @@
 </nav>
 
 <header>
-    <h1>📊 Diagrammide loomine ProjectLibre's</h1>
-    <p class="subtitle">Gantt-diagramm ja ressursidiagrammid — projekti visuaalne juhtimine</p>
+    <h1>📊 Diagrammide kasutamine ProjectLibre's</h1>
+    <p class="subtitle">Gantt-diagramm ja ressursside vaade — projekti visuaalne jälgimine</p>
 </header>
 
 <main>
 
     <div class="goal-card">
-        <p>🎯 <strong>Eesmärk:</strong> Selles juhendis näidatakse, kuidas kasutada ProjectLibre's Gantt-diagrammi ülesannete planeerimiseks ning ressursidiagramme meeskonna koormuse jälgimiseks.</p>
+        <p>🎯 <strong>Eesmärk:</strong> Õpime, kuidas avada ja kasutada ProjectLibre's kahte olulist vaadet — Gantt-diagrammi ülesannete ajakava haldamiseks ning Resource Usage vaadet ressursside koormuse jälgimiseks.</p>
     </div>
-
-    <!-- GANTT -->
-    <section>
-        <span class="step-label">Diagramm 1</span>
-        <h2>Gantt-diagramm</h2>
-        <p>Gantt-diagramm on ProjectLibre's peamine vaade, mis kuvatakse automaatselt programmi avamisel. See näitab ülesandeid ajajoone peal — iga ülesanne on kujutatud horisontaalse ribana, mille pikkus vastab kestusele.</p>
-        <p>Gantt-diagramm sobib ideaalselt projekti ajakava planeerimiseks, ülesannete järjestuse määramiseks ja tähtaegade jälgimiseks.</p>
-        <img src="projectLibreImg/gantt1.png" alt="Gantt-diagrammi üldvaade ProjectLibre's">
-    </section>
 
     <section>
         <span class="step-label">Samm 1</span>
-        <h2>Ülesannete lisamine Gantt-vaatesse</h2>
-        <p>Avage ProjectLibre — vaikimisi avaneb <strong>Gantt Chart</strong> vaade. Klõpsake tühja reale vasakus tabelis ja sisestage ülesande nimi väljale <strong>Name</strong>. Määrake <strong>Duration</strong> (kestus päevades) ja <strong>Start</strong> (alguskuupäev).</p>
-        <img src="projectLibreImg/gantt2.png" alt="Ülesannete sisestamine tabelisse">
+        <h2>Gantt-diagrammi vaatamine</h2>
+        <p>Gantt-diagrammi avamiseks liigu vahekaardile <strong>Task</strong> ja vali sealt <strong>Gantt</strong>.</p>
+        <img src="projectLibreImg/gantt1.png" alt="Task → Gantt vahekaart">
     </section>
 
     <section>
         <span class="step-label">Samm 2</span>
-        <h2>Ülesannete sõltuvuste loomine</h2>
-        <p>Sõltuvuste lisamiseks klõpsake ülesandel ja lohistage nool järgmisele ülesandele otse Gantt-ribal. Teise võimalusena sisestage eelneva ülesande number väljale <strong>Predecessors</strong> tabelis. Sõltuvus kuvatakse noolena diagrammil.</p>
-        <img src="projectLibreImg/gantt3.png" alt="Sõltuvuste loomine Gantt-diagrammil">
+        <h2>Gantt-diagramm</h2>
+        <p>Ekraanile kuvatakse projekt koos Gantt-diagrammiga. Vasakul asuvas tabelis saad lisada ja muuta ülesandeid ning allülesandeid, paremal pool on näha visuaalne ajakava koos päevade arvuga.</p>
+        <img src="projectLibreImg/gantt2.png" alt="Gantt-diagrammi vaade ülesannete ja ajakavaga">
     </section>
 
     <section>
         <span class="step-label">Samm 3</span>
-        <h2>Gantt-diagrammi kohandamine</h2>
-        <p>Diagrammi välimuse muutmiseks minge <strong>View → Gantt Chart</strong> ja paremklõpsake Gantt-ribal. Valige <strong>Bar Styles</strong>, et muuta ribade värve ja kuju. Ajajoone suurendamiseks/vähendamiseks kasutage <strong>View → Zoom In / Zoom Out</strong>.</p>
-        <img src="projectLibreImg/gantt4.png" alt="Bar Styles seaded">
-    </section>
-
-    <!-- RESOURCE -->
-    <section>
-        <span class="step-label">Diagramm 2</span>
-        <h2>Ressursidiagramm (Resource Usage)</h2>
-        <p>Ressursidiagramm näitab, kui palju tööd on igale ressursile (töötajale) ajas jaotatud. See aitab tuvastada <strong>ülekoormust</strong> (punasega märgitud) ja tasakaalustada meeskonna töökoormust.</p>
-        <p>Vaade sobib ressursside planeerimiseks ja konfliktide lahendamiseks projekti jooksul.</p>
-        <img src="projectLibreImg/res1.png" alt="Resource Usage vaade">
+        <h2>Resource Usage avamine</h2>
+        <p>Ressursside graafikute vaatamiseks navigeeri vahekaardile <strong>Views</strong> ja vali sealt <strong>Resource Usage</strong>.</p>
+        <img src="projectLibreImg/res1.png" alt="Views → Resource Usage menüü">
     </section>
 
     <section>
         <span class="step-label">Samm 4</span>
-        <h2>Ressursidiagrammi avamine</h2>
-        <p>Minge menüüsse <strong>View → Resource Usage</strong>. Avaneb tabel, kus on näha iga ressursi töömaht päevade kaupa. Ülekoormatud ressursid on märgitud <strong>punasega</strong>.</p>
-        <img src="projectLibreImg/res2.png" alt="View → Resource Usage menüü">
-    </section>
-
-    <section>
-        <span class="step-label">Samm 5</span>
-        <h2>Ressursside määramine ülesannetele</h2>
-        <p>Gantt-vaates topeltklõpsake ülesandel, et avada <strong>Task Information</strong> aken. Minge vahekaardile <strong>Resources</strong> ja lisage ressurss väljale <strong>Resource Name</strong>. Määrake ka <strong>Units</strong> (nt 100% = täistööaeg).</p>
-        <img src="projectLibreImg/res3.png" alt="Task Information → Resources">
-    </section>
-
-    <section>
-        <span class="step-label">Samm 6</span>
-        <h2>Ülekoormuse lahendamine</h2>
-        <p>Kui ressurss on ülekoormatud, saate kasutada <strong>Resource Leveling</strong> funktsiooni: <strong>Tools → Level Resources</strong>. ProjectLibre nihutab ülesandeid automaatselt nii, et ükski ressurss ei ole ülekoormatud.</p>
-        <img src="projectLibreImg/res4.png" alt="Tools → Level Resources">
-    </section>
-
-    <section>
-        <span class="step-label">Tulemus</span>
-        <h2>Diagrammid on valmis</h2>
-        <p>Gantt-diagramm annab selge ülevaate projekti ajakavast ja ülesannete järjestusest. Ressursidiagramm tagab, et meeskonna töökoormus on tasakaalus ja projekt edeneb plaanipäraselt.</p>
-        <img src="projectLibreImg/res5.png" alt="Lõplik Gantt-diagramm koos ressurssidega">
+        <h2>Resource Usage diagramm</h2>
+        <p>Avanevas vaates on loetletud kõik projektis kasutatavad ressursid — nii materiaalsed kui ka inimressursid. Iga ressursi kohta on näha tööaeg ning ülesanded, millega ta on seotud.</p>
+        <img src="projectLibreImg/res2.png" alt="Resource Usage diagramm ressursside ja tööajaga">
     </section>
 
 </main>
