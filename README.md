@@ -146,7 +146,7 @@ Kõik ekraanipildid on tehtud käsitsi ProjectLibre tarkvarast ja laetakse otse 
 > [!TIP]
 > Pildid peavad asuma `projectLibreImg/` kaustas, muidu ei kuvata neid lehel.
 
-> [!WARNING]
+>    [!WARNING]
 > Ära muuda `style.css` muutujate nimesid — neid kasutatakse mõlemal lehel.
 
 ---
