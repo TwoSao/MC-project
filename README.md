@@ -155,5 +155,3 @@ Kõik ekraanipildid on tehtud käsitsi ProjectLibre tarkvarast ja laetakse otse 
 
 © 2026 Illia Blahun
 
-[^1]: Projekt on loodud õppeotstarbel ProjectLibre tarkvara tutvustamiseks.
-[^2]: Pildid on tehtud Windows ekraanipildi tööriistaga ja salvestatud PNG formaadis.
