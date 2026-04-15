@@ -104,15 +104,13 @@ nav a.active {
 ## 🖼 Ekraanipildid
 
 ### Kalender
-![Kalendri seadete avamine](images/img1.png)
+<img width="1025" height="838" alt="{A88F9DF0-D7A7-4748-9A2E-03B987EB2BC6}" src="https://github.com/user-attachments/assets/88b6dfcb-a2f8-48c2-a621-52d93bb37a28" />
 
 ### Diagramm
-![Gantt-diagramm](images/dig1.png)
+<img width="1053" height="923" alt="{B3B0ECD1-4BC4-4CAF-932A-1C33857B6269}" src="https://github.com/user-attachments/assets/69542cb8-86f8-4df0-9558-3f3848c60892" />
 
-### Valem
-![Kohandatud väli](images/valem1.png)
 
----
+
 
 
 > [!WARNING]
