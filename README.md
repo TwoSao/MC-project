@@ -104,10 +104,13 @@ nav a.active {
 ## 🖼 Ekraanipildid
 
 ### Kalender
-<img width="1025" height="838" alt="{A88F9DF0-D7A7-4748-9A2E-03B987EB2BC6}" src="https://github.com/user-attachments/assets/88b6dfcb-a2f8-48c2-a621-52d93bb37a28" />
+<img width="1148" height="912" alt="{E6B87A1D-76DC-421C-983F-86A3B203F779}" src="https://github.com/user-attachments/assets/0c57ebcb-1acf-4f32-bfa3-7f90c5d3d193" />
 
 ### Diagramm
-<img width="1053" height="923" alt="{B3B0ECD1-4BC4-4CAF-932A-1C33857B6269}" src="https://github.com/user-attachments/assets/69542cb8-86f8-4df0-9558-3f3848c60892" />
+<img width="1088" height="926" alt="{0F731ABC-F0AE-4836-9F32-F91B20BEF2DA}" src="https://github.com/user-attachments/assets/b67dafb0-9000-40b7-9909-c5b18e99591b" />
+
+### Valem
+<img width="1178" height="947" alt="{BC276E64-C851-481E-911E-3C275D7A140E}" src="https://github.com/user-attachments/assets/f6eb77a7-6af4-4833-8dc0-0b16470f450f" />
 
 
 
